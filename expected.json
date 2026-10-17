@@ -1,0 +1,192 @@
+[
+ {
+  "fn": "oddsTruth",
+  "args": [
+   5,
+   200,
+   3
+  ],
+  "expected": "5 of 200 tickets with 3 prizes: a 7.4% chance of at least one win, 92.6% of none."
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   1,
+   200,
+   1
+  ],
+  "expected": "1 of 200 tickets with 1 prize: a 0.5% chance of at least one win, 99.5% of none."
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   200,
+   200,
+   3
+  ],
+  "expected": "200 of 200 tickets with 3 prizes: a 100.0% chance of at least one win, 0.0% of none."
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   198,
+   200,
+   3
+  ],
+  "expected": "198 of 200 tickets with 3 prizes: a 100.0% chance of at least one win, 0.0% of none."
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   50,
+   100,
+   1
+  ],
+  "expected": "50 of 100 tickets with 1 prize: a 50.0% chance of at least one win, 50.0% of none."
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   0,
+   200,
+   3
+  ],
+  "expected": "ERR:your tickets must be a whole number, 1 or more"
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   201,
+   200,
+   3
+  ],
+  "expected": "ERR:you cannot hold more tickets than were sold"
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   5,
+   200,
+   0
+  ],
+  "expected": "ERR:prizes must be a whole number, 1 or more"
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   5,
+   2,
+   3
+  ],
+  "expected": "ERR:there cannot be more prizes than tickets sold"
+ },
+ {
+  "fn": "oddsTruth",
+  "args": [
+   2.5,
+   200,
+   3
+  ],
+  "expected": "ERR:your tickets must be a whole number, 1 or more"
+ },
+ {
+  "fn": "valueTruth",
+  "args": [
+   2,
+   5,
+   200,
+   3,
+   50
+  ],
+  "expected": "5 tickets at $2.00 cost $10.00. Average prize value is $3.75 (3 prizes of $50.00 over 200 tickets, $0.75 per ticket). On average: behind by $6.25."
+ },
+ {
+  "fn": "valueTruth",
+  "args": [
+   0.75,
+   1,
+   200,
+   3,
+   50
+  ],
+  "expected": "1 ticket at $0.75 cost $0.75. Average prize value is $0.75 (3 prizes of $50.00 over 200 tickets, $0.75 per ticket). On average: even."
+ },
+ {
+  "fn": "valueTruth",
+  "args": [
+   0,
+   4,
+   100,
+   2,
+   25
+  ],
+  "expected": "4 tickets at $0.00 cost $0.00. Average prize value is $2.00 (2 prizes of $25.00 over 100 tickets, $0.50 per ticket). On average: ahead by $2.00."
+ },
+ {
+  "fn": "valueTruth",
+  "args": [
+   10,
+   10,
+   100,
+   1,
+   500
+  ],
+  "expected": "10 tickets at $10.00 cost $100.00. Average prize value is $50.00 (1 prize of $500.00 over 100 tickets, $5.00 per ticket). On average: behind by $50.00."
+ },
+ {
+  "fn": "valueTruth",
+  "args": [
+   -1,
+   5,
+   200,
+   3,
+   50
+  ],
+  "expected": "ERR:ticket price must be 0 or more"
+ },
+ {
+  "fn": "targetTruth",
+  "args": [
+   200,
+   3,
+   50
+  ],
+  "expected": "To reach a 50% chance with 3 prizes among 200 tickets, you would hold 42 tickets (50.9%)."
+ },
+ {
+  "fn": "targetTruth",
+  "args": [
+   100,
+   1,
+   1
+  ],
+  "expected": "To reach a 1% chance with 1 prize among 100 tickets, you would hold 1 ticket (1.0%)."
+ },
+ {
+  "fn": "targetTruth",
+  "args": [
+   100,
+   1,
+   100
+  ],
+  "expected": "To reach a 100% chance with 1 prize among 100 tickets, you would hold 100 tickets (100.0%)."
+ },
+ {
+  "fn": "targetTruth",
+  "args": [
+   200,
+   3,
+   0
+  ],
+  "expected": "ERR:target must be over 0 and at most 100 percent"
+ },
+ {
+  "fn": "targetTruth",
+  "args": [
+   200,
+   3,
+   12.5
+  ],
+  "expected": "To reach a 12.5% chance with 3 prizes among 200 tickets, you would hold 9 tickets (13.0%)."
+ }
+]
